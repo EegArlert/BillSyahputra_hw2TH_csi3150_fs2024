@@ -46,7 +46,8 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
+    padding-top: 30px;
 }
 
 header .logo {
@@ -73,17 +74,18 @@ header .logo .heading-last-name {
     transition: padding 0.8s;
 }
 
-
 header .logo .heading-last-name:hover {
     padding: 0 75px 0 0;
 }
-
 
 header h1 {
     font-size: 2.5rem;
 }
 
 header .heading-nav {
+    position: relative;
+    bottom: 60px;
+    align-self: end;
     display: flex;
     align-items: center;
     height: 100%;
