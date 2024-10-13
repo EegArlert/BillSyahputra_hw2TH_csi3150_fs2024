@@ -37,26 +37,31 @@ body .wrapper {
 
 header {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding-top: 30px;
 }
 
 header .logo {
     align-self: start;
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     font-size: 14px;
     padding: 0 40px 20px 0;
 }
 
 header .logo .heading-first-name {
+    width: 100%;
     margin: 0;
-    transition: padding 0.8s;
+    padding-left: 0;
+    transition: 0.8s;
 }
 
 header .logo .heading-first-name:hover {
-    padding: 0 0 0 137px;
+    width: 100%;
+    padding-left: 170px;
 }
 
 header .logo .heading-last-name {
@@ -65,23 +70,137 @@ header .logo .heading-last-name {
     transition: padding 0.8s;
 }
 
-
 header .logo .heading-last-name:hover {
     padding: 0 75px 0 0;
 }
+/* 
+header .title {
+    border-bottom: solid 1.3px;
+    padding-bottom: 40px;
+    width: 60%;
+    text-align: center;
+} */
 
+header h1 {
+    font-size: 2.5rem;
+}
 
+header .heading-nav {
+    position: relative;
+    bottom: 60px;
+    align-self: end;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-width: 50px;
+    font-size: var(--anchor-font-size-link);
+    gap: 30px;
+    flex-wrap: wrap;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+header .heading-nav .nav-wrapper {
+    position: relative;
+    height: 30px;
+    top: 10px;
+}
+
+header .heading-nav .nav-wrapper .navigation {
+    position: relative;
+    bottom: 0;
+    transition: bottom 0.2s ease;
+}
+
+header .heading-nav .nav-wrapper:hover .navigation {
+    position: relative;
+    bottom: 4px;
+    box-shadow: 0 1.4px rgba(0, 0, 0, 0.83);
+}
 
 /* Header Container Style Ends */
 
 
-
-
 /* Main Container Style Starts */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main p,
+main span,
+main h4,
+main h5,
+main li {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+
+main section {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-top: solid 1.3px;
+    width: 70%;
+    padding: 40px 20px 40px 20px;
+}
+
+main section:hover {
+    background-color: rgba(244, 244, 244, 1);
+}
+
+main section h2 {
+    font-size: 1.4rem;
+}
+
+main span {
+    display: block;
+}
+
+main .contact-info-wrapper {
+    height: 100%;
+}
+
+main .contact-info-wrapper .contact-info-grid {
+    display: grid;
+    grid-template-columns: 65px 10px 400px;
+    grid-template-rows: repeat(5, 30px);
+    gap: 5px;
+    justify-items: start;
+}
+
+main .professional-experience h4 {
+    font-size: 1.2rem;
+}
+
+main .professional-experience #experience-1 {
+    margin-bottom: 40px;
+}
+
+main .education table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main .hobbies {
+    border-bottom: solid 1.3px;
+}
+
+table,
+th,
+td{
+    padding: 10px;
+    border: solid 1px;
+}
+
+
+
 
 /* Main Container Style Ends */
-
-
 
 
 /* Footer Container Style Starts */
@@ -92,7 +211,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: solid 1.2px;
     padding-top: 20px;
     width: 60%;
 }

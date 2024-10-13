@@ -60,12 +60,15 @@ header .logo {
 }
 
 header .logo .heading-first-name {
+    width: 100%;
     margin: 0;
-    transition: padding 0.8s;
+    padding-left: 0;
+    transition: 0.8s;
 }
 
 header .logo .heading-first-name:hover {
-    padding: 0 0 0 137px;
+    width: 100%;
+    padding-left: 170px;
 }
 
 header .logo .heading-last-name {
@@ -129,14 +132,18 @@ main section {
     text-align: center;
     gap: 20px;
     border-top: solid 1.3px;
-    width: 60%;
+    width: 70%;
     padding-bottom: 70px;
     padding-top: 30px;
 }
 
+main section + section + section {
+    border-bottom: solid 1.3px;
+}
+
 main section:hover {
     border-top-width: 0.3px 50%;
-    background-color: rgba(240, 240, 240, 1);
+    background-color: rgba(244, 244, 244, 1);
 }
 
 main section h1 {
@@ -170,7 +177,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: solid 1.2px;
     padding-top: 20px;
     width: 60%;
 }
