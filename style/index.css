@@ -71,19 +71,21 @@ header .logo .heading-last-name:hover {
 }
 
 header .heading-nav {
+    position: relative;
     display: flex;
     align-items: center;
     height: 100%;
     min-width: 50px;
     font-size: var(--anchor-font-size-link);
     gap: 30px;
+    top: 20px;
     flex-wrap: wrap;
     color: rgba(0, 0, 0, 0.8);
 }
 
 header .heading-nav .nav-wrapper {
     position: relative;
-    height: 20px;
+    height: 30px;
     top: 10px;
 }
 
@@ -107,7 +109,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 main .container-profile {
@@ -142,10 +144,12 @@ main .container-introduction .container-paragraph {
 
 main .container-introduction .container-paragraph .paragraph.main {
     margin-bottom: 0;
+    text-align: justify;
 }
 
 main .container-introduction .container-paragraph .paragraph.anchor {
     margin-top: 9px;
+    text-align: justify;
 }
 
 main .container-introduction .container-paragraph .paragraph.anchor a {
@@ -154,22 +158,46 @@ main .container-introduction .container-paragraph .paragraph.anchor a {
 }
 
 main .container-progress-bar {
+    font-size: 1.1rem;
     margin-top: 20px;
+    border-top: solid 1.2px;
+    padding-top: 50px;
+    width: 70%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    gap: 10px;
+    gap: 20px;
+}
+
+progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 170px;
+    height: 14px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-image: black;
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
 /* Main Container Style Ends */
 
 /* Footer Container Style Starts */
 footer {
+    align-self: center;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: solid 1.2px;
+    padding-top: 20px;
+    width: 70%;
 }
 
 footer h2 {
@@ -178,17 +206,22 @@ footer h2 {
 
 footer .personal-info {
     display: grid;
-    grid-template-columns: 70px 230px;
+    grid-template-columns: 60px 10px 230px;
     grid-template-rows: repeat(3, 30px);
-    gap: 10px;
+    gap: 2px;
     margin-bottom: 30px;
-    margin-left: 60px;
+    margin-left: 70px;
     justify-items: start;
 }
 
-footer .personal-info span {
+footer .personal-info .span-info {
     grid-column: 1;
-    justify-self: end;
+    justify-self: center;
+}
+
+footer .personal-info .span-semicolon {
+    grid-column: 2;
+
 }
 
 footer .personal-info a {
