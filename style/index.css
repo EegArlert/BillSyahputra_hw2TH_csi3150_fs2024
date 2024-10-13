@@ -97,7 +97,11 @@ header .heading-nav .nav-wrapper .navigation {
 
 header .heading-nav .nav-wrapper:hover .navigation {
     position: relative;
-    bottom: 4px;
+    bottom: 7px;
+    box-shadow: 0 1.4px rgba(0, 0, 0, 0.83);
+}
+
+header .heading-nav .nav-wrapper.home .navigation{
     box-shadow: 0 1.4px rgba(0, 0, 0, 0.83);
 }
 
@@ -132,12 +136,12 @@ main .container-profile img:hover {
 
 main .container-introduction {
     display: flex;
-    gap: 30px;
-    padding: 0 50px 0 50px;
+    width: 80%;
     text-align: start;
 }
 
 main .container-introduction .container-paragraph {
+    padding: 20px;
     width: 100%;
     font-size: var(--font-size);
 }
@@ -152,7 +156,7 @@ main .container-introduction .container-paragraph .paragraph.anchor {
     text-align: justify;
 }
 
-main .container-introduction .container-paragraph .paragraph.anchor a {
+main .container-introduction .container-paragraph a {
     font-weight: 900;
     font-size: var(--anchor-font-size-link);
 }
@@ -161,13 +165,18 @@ main .container-progress-bar {
     font-size: 1.1rem;
     margin-top: 20px;
     border-top: solid 1.2px;
-    padding-top: 50px;
+    border-bottom: solid 1.2px;
+    padding: 40px 40px 40px 40px;
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 20px;
+}
+
+main section:hover {
+    background-color: rgba(244, 244, 244, 1);
 }
 
 progress[value] {
@@ -195,7 +204,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: solid 1.2px;
     padding-top: 20px;
     width: 70%;
 }

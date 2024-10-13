@@ -113,7 +113,11 @@ header .heading-nav .nav-wrapper .navigation {
 
 header .heading-nav .nav-wrapper:hover .navigation {
     position: relative;
-    bottom: 4px;
+    bottom: 8px;
+    box-shadow: 0 1.4px rgba(0, 0, 0, 0.83);
+}
+
+header .heading-nav .fun-fact .navigation {
     box-shadow: 0 1.4px rgba(0, 0, 0, 0.83);
 }
 
