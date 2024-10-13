@@ -23,14 +23,13 @@ body {
 }
 
 /* styling main container */
-body .resume-container {
+body .wrapper {
     margin: 0.5rem 0.5rem;
     padding: 30px 10% 30px 10%;
     width: 80%;
     height: 95%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: rgba(233, 233, 233, 1);
     overflow: scroll;
 }
@@ -41,6 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 header .logo {
@@ -163,7 +163,6 @@ main .container-progress-bar {
 
 /* Main Container Style Ends */
 
-
 /* Footer Container Style Starts */
 footer {
     margin-top: 50px;
@@ -173,18 +172,23 @@ footer {
     align-items: center;
 }
 
+footer h2 {
+    margin-bottom: 40px;
+}
+
 footer .personal-info {
     display: grid;
-    grid-template-columns: 80px 230px;
+    grid-template-columns: 70px 230px;
     grid-template-rows: repeat(3, 30px);
-    justify-items: start;
     gap: 10px;
     margin-bottom: 30px;
     margin-left: 60px;
+    justify-items: start;
 }
 
 footer .personal-info span {
     grid-column: 1;
+    justify-self: end;
 }
 
 footer .personal-info a {

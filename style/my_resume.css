@@ -1,0 +1,91 @@
+:root {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    --anchor-font-size-link: 1.2rem;
+    --font-size: 1rem;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.83);
+    text-decoration: none;
+}
+
+/* reset basic styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: rgba(0, 0, 0, 0.83);
+    width: 100%;
+    min-height: 75%;
+    max-height: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+body .wrapper {
+    margin: 0.5rem 0.5rem;
+    padding: 30px 10% 30px 10%;
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(233, 233, 233, 1);
+    overflow: scroll;
+}
+
+/* Header Container Style Starts */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* Header Container Style Ends */
+
+
+
+
+/* Main Container Style Starts */
+
+/* Main Container Style Ends */
+
+
+
+
+/* Footer Container Style Starts */
+footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    margin-bottom: 40px;
+}
+
+footer .personal-info {
+    display: grid;
+    grid-template-columns: 70px 230px;
+    grid-template-rows: repeat(3, 30px);
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    justify-items: start;
+}
+
+footer .personal-info span {
+    grid-column: 1;
+    justify-self: end;
+}
+
+footer .personal-info a {
+    font-weight: 800;
+}
+
+/* Footer Container Style Ends */
