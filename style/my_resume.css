@@ -41,6 +41,34 @@ header {
     align-items: center;
 }
 
+header .logo {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    font-size: 14px;
+    padding: 0 40px 20px 0;
+}
+
+header .logo .heading-first-name {
+    margin: 0;
+    transition: padding 0.8s;
+}
+
+header .logo .heading-first-name:hover {
+    padding: 0 0 0 137px;
+}
+
+header .logo .heading-last-name {
+    margin: 0;
+    padding: 0 0 0 50px;
+    transition: padding 0.8s;
+}
+
+
+header .logo .heading-last-name:hover {
+    padding: 0 75px 0 0;
+}
 
 
 

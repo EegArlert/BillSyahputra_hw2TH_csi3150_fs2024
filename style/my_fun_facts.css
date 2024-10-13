@@ -49,6 +49,36 @@ header {
     margin-bottom: 60px;
 }
 
+header .logo {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    font-size: 14px;
+    padding: 0 40px 20px 0;
+}
+
+header .logo .heading-first-name {
+    margin: 0;
+    transition: padding 0.8s;
+}
+
+header .logo .heading-first-name:hover {
+    padding: 0 0 0 137px;
+}
+
+header .logo .heading-last-name {
+    margin: 0;
+    padding: 0 0 0 50px;
+    transition: padding 0.8s;
+}
+
+
+header .logo .heading-last-name:hover {
+    padding: 0 75px 0 0;
+}
+
+
 header h1 {
     font-size: 2.5rem;
 }
@@ -116,16 +146,18 @@ main section h2 {
     font-size: 1.2rem;
 }
 
-main section > p {
+main section>p {
     margin-top: 10px;
 }
-main section .popup-link  {
+
+main section .popup-link {
     font-size: var(--anchor-font-size-link);
 }
 
 main section .popup-link a {
     font-weight: 700;
 }
+
 /* Main Container Style Ends */
 
 
