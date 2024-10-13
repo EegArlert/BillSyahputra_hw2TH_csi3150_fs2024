@@ -10,6 +10,12 @@ a {
 }
 
 /* reset basic styling */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Parent Container Styling Starts */
 body {
     margin: 0;
     padding: 0;
@@ -32,9 +38,10 @@ body .wrapper {
     background-color: rgba(233, 233, 233, 1);
     overflow: scroll;
 }
+/* Parent Container Styling Ends */
 
-/* Header Container Style Starts */
 
+/* Header Container Styling Starts */
 header {
     display: flex;
     align-items: center;
@@ -52,6 +59,7 @@ header .logo {
     padding: 0 40px 20px 0;
 }
 
+/* Logo Container Animation Starts */
 header .logo .heading-first-name {
     width: 100%;
     margin: 0;
@@ -73,6 +81,8 @@ header .logo .heading-last-name {
 header .logo .heading-last-name:hover {
     padding: 0 75px 0 0;
 }
+/* Logo Container Animation Ends */
+
 /* 
 header .title {
     border-bottom: solid 1.3px;
@@ -120,11 +130,9 @@ header .heading-nav .nav-wrapper:hover .navigation {
 header .heading-nav .resume .navigation {
     box-shadow: 0 1.4px rgba(0, 0, 0, 0.83);
 }
+/* Header Container Styling Ends */
 
-/* Header Container Style Ends */
-
-
-/* Main Container Style Starts */
+/* Main Container Styling Starts */
 main {
     display: flex;
     flex-direction: column;
@@ -200,14 +208,9 @@ td{
     padding: 10px;
     border: solid 1px;
 }
+/* Main Container Styling Ends */
 
-
-
-
-/* Main Container Style Ends */
-
-
-/* Footer Container Style Starts */
+/* Footer Container Styling Starts */
 footer {
     align-self: center;
     margin-top: 50px;
@@ -247,4 +250,4 @@ footer .personal-info a {
     font-weight: 800;
 }
 
-/* Footer Container Style Ends */
+/* Footer Container Styling Ends */

@@ -9,7 +9,13 @@ a {
     text-decoration: none;
 }
 
-/* reset basic styling */
+/* Reset Basic Styling P tag*/
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Parent Container Styling Starts */
 body {
     margin: 0;
     padding: 0;
@@ -22,7 +28,6 @@ body {
     justify-content: center;
 }
 
-/* styling main container */
 body .wrapper {
     margin: 0.5rem 0.5rem;
     padding: 30px 10% 30px 10%;
@@ -33,9 +38,9 @@ body .wrapper {
     background-color: rgba(233, 233, 233, 1);
     overflow: scroll;
 }
+/* Parent Container Styling Ends */
 
-/* Header Style Starts */
-
+/* Header Styling Starts */
 header {
     display: flex;
     justify-content: space-between;
@@ -51,6 +56,7 @@ header .logo {
     padding: 0 40px 20px 0;
 }
 
+/* Logo Container Animation Starts */
 header .logo .heading-first-name {
     margin: 0;
     transition: padding 0.8s;
@@ -69,6 +75,7 @@ header .logo .heading-first-name:hover {
 header .logo .heading-last-name:hover {
     padding: 0 150px 0 0;
 }
+/* Logo Container Animation Ends */
 
 header .heading-nav {
     position: relative;
@@ -104,10 +111,9 @@ header .heading-nav .nav-wrapper:hover .navigation {
 header .heading-nav .nav-wrapper.home .navigation{
     box-shadow: 0 1.4px rgba(0, 0, 0, 0.83);
 }
+/* Header Container Styling Ends */
 
-/* Header Container Style Ends */
-
-/* Main Container Style Starts */
+/* Main Container Styling Starts */
 main {
     display: flex;
     flex-direction: column;
@@ -180,7 +186,7 @@ main section:hover {
 }
 
 progress[value] {
-    /* Reset the default appearance */
+    /* Reset The Default Appearance for Progress Tag */
     -webkit-appearance: none;
     appearance: none;
     width: 170px;
@@ -193,10 +199,9 @@ progress[value]::-webkit-progress-bar {
     border-radius: 2px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
+/* Main Container Styling Ends */
 
-/* Main Container Style Ends */
-
-/* Footer Container Style Starts */
+/* Footer Container Styling Starts */
 footer {
     align-self: center;
     margin-top: 50px;
@@ -236,4 +241,4 @@ footer .personal-info a {
     font-weight: 800;
 }
 
-/* Footer Container Style Ends */
+/* Footer Container Styling Ends */
